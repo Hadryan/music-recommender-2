@@ -1,0 +1,9 @@
+# byte code
+__pycache__
+*.pyc
+
+# environment
+venv
+
+#vscode settings
+.vscode
