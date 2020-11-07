@@ -24,7 +24,7 @@ with open("README.md", "r") as readme:
     long_description = readme.read()
 
 setup(
-    name="recpy",
+    name="recsys",
     version="0.1.0",
     author="Matthew Rossi",
     description="Recommender system library",

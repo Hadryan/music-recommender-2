@@ -22,24 +22,24 @@ import pandas as pd
 import numpy as np
 from datetime import datetime as dt
 
-from recpy.utils.data_utils import read_profile, read_dataset, profile_to_ucm, profile_to_icm, df_to_csr
-from recpy.utils.split import holdout
+from recsys.utils.data_utils import read_profile, read_dataset, profile_to_ucm, profile_to_icm, df_to_csr
+from recsys.utils.split import holdout
 
-from recpy.recommenders.non_personalized import TopPop, GlobalEffects
-from recpy.recommenders.knn import KNNRecommender
-from recpy.recommenders.slim import SLIM, MultiThreadSLIM
-from recpy.recommenders.fs_slim import fsSLIM, fsMultiThreadSLIM
-#from recpy.recommenders.sslim import SSLIM
-from recpy.recommenders.ials import iALS
-from recpy.recommenders.bpr_fm import BPR_FM
-from recpy.recommenders.warp_fm import WARP_FM
-from recpy.recommenders.kos_warp_fm import kOS_WARP_FM
+from recsys.recommenders.non_personalized import TopPop, GlobalEffects
+from recsys.recommenders.knn import KNNRecommender
+from recsys.recommenders.slim import SLIM, MultiThreadSLIM
+from recsys.recommenders.fs_slim import fsSLIM, fsMultiThreadSLIM
+#from recsys.recommenders.sslim import SSLIM
+from recsys.recommenders.ials import iALS
+from recsys.recommenders.bpr_fm import BPR_FM
+from recsys.recommenders.warp_fm import WARP_FM
+from recsys.recommenders.kos_warp_fm import kOS_WARP_FM
 
-from recpy.recommenders.model_merger_fast import ModelMerger
+from recsys.recommenders.model_merger_fast import ModelMerger
 
-from recpy.utils.tuning import grid_search_holdout_mm
-from recpy.metrics import precision, recall, map, ndcg, rr
-from recpy.utils.eval import evaluate_metrics
+from recsys.utils.tuning import grid_search_holdout_mm
+from recsys.metrics import precision, recall, map, ndcg, rr
+from recsys.utils.eval import evaluate_metrics
 
 logger = logging.getLogger(__name__)
 logging.basicConfig(

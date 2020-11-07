@@ -22,10 +22,10 @@ import logging
 import numpy as np
 from sklearn.model_selection import ParameterGrid
 
-from recpy.metrics import precision
-from recpy.utils.data_utils import df_to_csr
-from recpy.utils.split import holdout, k_fold_cv
-from recpy.utils.eval import evaluate_metric
+from recsys.metrics import precision
+from recsys.utils.data_utils import df_to_csr
+from recsys.utils.split import holdout, k_fold_cv
+from recsys.utils.eval import evaluate_metric
 
 logger = logging.getLogger(__name__)
 logging.basicConfig(

@@ -7,7 +7,7 @@ ACTIVATE       := $(VENV)/bin/activate
 PYTHON         := $(VENV)/bin/python
 PIP            := $(PYTHON) -m pip
 
-PACKAGES       := recpy
+PACKAGES       := recsys
 REQUIREMENTS   := requirements.txt
 
 LICENSE_TYPE   := "mit"

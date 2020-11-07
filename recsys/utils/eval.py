@@ -17,7 +17,7 @@
 # IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 # CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-from recpy.metrics import precision, recall, map, ndcg, rr
+from recsys.metrics import precision, recall, map, ndcg, rr
 
 
 def evaluate_metric(test, test_users, recommended_items, metric, at):

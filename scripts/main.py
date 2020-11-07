@@ -23,20 +23,20 @@ from datetime import datetime as dt
 
 import numpy as np
 import pandas as pd
-from recpy.utils.data_utils import read_profile, read_dataset, profile_to_ucm, profile_to_icm, df_to_csr
+from recsys.utils.data_utils import read_profile, read_dataset, profile_to_ucm, profile_to_icm, df_to_csr
 
-from recpy.recommenders.non_personalized import TopPop, GlobalEffects
-from recpy.recommenders.knn import KNNRecommender
-from recpy.recommenders.slim import SLIM, MultiThreadSLIM
-from recpy.recommenders.fs_slim import fsSLIM, fsMultiThreadSLIM
-#from recpy.recommenders.sslim import SSLIM
-from recpy.recommenders.ials import iALS
-from recpy.recommenders.bpr_fm import BPR_FM
-from recpy.recommenders.warp_fm import WARP_FM
-from recpy.recommenders.kos_warp_fm import kOS_WARP_FM
+from recsys.recommenders.non_personalized import TopPop, GlobalEffects
+from recsys.recommenders.knn import KNNRecommender
+from recsys.recommenders.slim import SLIM, MultiThreadSLIM
+from recsys.recommenders.fs_slim import fsSLIM, fsMultiThreadSLIM
+#from recsys.recommenders.sslim import SSLIM
+from recsys.recommenders.ials import iALS
+from recsys.recommenders.bpr_fm import BPR_FM
+from recsys.recommenders.warp_fm import WARP_FM
+from recsys.recommenders.kos_warp_fm import kOS_WARP_FM
 
-from recpy.recommenders.model_merger import ModelMerger
-from recpy.recommenders.score_merger import ScoreMerger
+from recsys.recommenders.model_merger import ModelMerger
+from recsys.recommenders.score_merger import ScoreMerger
 
 
 logger = logging.getLogger(__name__)

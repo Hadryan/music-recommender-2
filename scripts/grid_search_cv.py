@@ -22,18 +22,18 @@ import pandas as pd
 import numpy as np
 from datetime import datetime as dt
 
-from recpy.utils.data_utils import read_profile, read_dataset, df_to_csr, profile_to_ucm, profile_to_icm
-from recpy.utils.split import holdout
+from recsys.utils.data_utils import read_profile, read_dataset, df_to_csr, profile_to_ucm, profile_to_icm
+from recsys.utils.split import holdout
 
-from recpy.recommenders.non_personalized import TopPop, GlobalEffects
-from recpy.recommenders.knn import KNNRecommender
-from recpy.recommenders.slim import SLIM, MultiThreadSLIM
-from recpy.recommenders.fs_slim import fsSLIM, fsMultiThreadSLIM
-# from recpy.recommenders.mf import FunkSVD, IALS_numpy, BPRMF
+from recsys.recommenders.non_personalized import TopPop, GlobalEffects
+from recsys.recommenders.knn import KNNRecommender
+from recsys.recommenders.slim import SLIM, MultiThreadSLIM
+from recsys.recommenders.fs_slim import fsSLIM, fsMultiThreadSLIM
+# from recsys.recommenders.mf import FunkSVD, IALS_numpy, BPRMF
 
-from recpy.utils.tuning import grid_search_cv
-from recpy.metrics import precision, recall, map, ndcg, rr
-from recpy.utils.eval import evaluate_metrics
+from recsys.utils.tuning import grid_search_cv
+from recsys.metrics import precision, recall, map, ndcg, rr
+from recsys.utils.eval import evaluate_metrics
 
 logger = logging.getLogger(__name__)
 logging.basicConfig(
